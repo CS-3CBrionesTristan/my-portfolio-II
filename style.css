@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+  background: black;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(tjj.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ff004f;
+   
+}
+
+.container{
+    padding: 10px 10%;
+    
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+}
+
+.logo{
+    width: 140px;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #ff004f;;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 160px;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.header-text h1{
+    font-size: 60px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+}
+
+.header-skills p{
+    margin-top: 80px;
+    color: whitesmoke;
+}
+
+.header-skills h1{
+    color: #ff004f;
+    font-size: 50px;
+    padding-left: 250px;
+}
+
+
+
+.progress-bar-html{
+    height: 20px;
+    background-color: #ff004f;
+    animation: myAnimation 4s;
+    width: 500px;
+    text-align: center;
+    margin-left: 80px;
+    color: black;
+  }
+  
+  @keyframes myAnimation{
+    from{
+      width: 0px;
+    }
+    to{
+      width: 500px;
+    }
+  }
+
+  .progress-bar-css{
+    height: 20px;
+    background-color: #ff004f;
+    animation: myAnimation 4s;
+    width: 250px;
+    text-align: center;
+    margin-left: 80px;
+    color: black;
+  }
+  
+  @keyframes myAnimation{
+    from{
+      width: 0px;
+    }
+    to{
+      width: 500px;
+    }
+  }
+
+  .progress-bar-java{
+    height: 20px;
+    background-color: #ff004f;
+    animation: myAnimation 4s;
+    width: 350px;
+    text-align: center;
+    margin-left: 80px;
+    color: black;
+  }
+  
+  @keyframes myAnimation{
+    from{
+      width: 0px;
+    }
+    to{
+      width: 500px;
+    }
+  }
+
+
+  .progress-bar-tindero{
+    height: 20px;
+    background-color: #ff004f;
+    animation: myAnimation 4s;
+    width: 600px;
+    text-align: center;
+    margin-left: 80px;
+    color: black;
+  }
+  
+  @keyframes myAnimation{
+    from{
+      width: 0px;
+    }
+    to{
+      width: 700px;
+    }
+  }
+
+#html{
+    margin-left: 100px;
+}
+
+#css{
+    margin-left: 100px;
+}
+
+#java{
+    margin-left: 100px;
+}
+
+#tindero{
+    margin-left: 100px;
+}
+
+.levels{
+  margin-top: 50px;
+  color: #ff004f;
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 500px;
+}
+
+.school-logo{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: -15px 10px 5px #ff004f;
+}
+
+.tab-content{
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.tab-content li{
+  margin: 5px;
+}
+
+.tab-content li:hover{
+  background: #ff004f;
+  color: black;
+}
+
+label{
+  font-size: 20px;
+}
+
+label::after{
+  content: '▼';
+}
+
+.tab .checkbox:checked ~ .tab-content{
+  max-height: 10rem;
+  overflow-y: auto;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+  
+}
+
+.tab-content::-webkit-scrollbar {
+  width: 0;
+}
+
+.contacts{
+  margin-top: 50px;
+  color: #ff004f;
+  font-size: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 600px;
+}
+
+.header-contacts{
+  margin-left: 300px;
+}
+
+.header-contacts label{
+  font-size: 50px;
+}
+
+.header-contacts .tab-content li{
+  font-size: 30px;
+  margin: 10px;
+}
